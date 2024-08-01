@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root{
-  --primary-color: #DBDBDB;
-  --secondary-color: #E4E12B;
-  --background-cat-size: 105%;
+  --primary-color: #D8D8D8;
+  --secondary-color: #F0FF00;
 }
 
 *{
@@ -14,8 +13,11 @@
   font-optical-sizing: auto;
 }
 
-.box{
+html{
   background-color: var(--primary-color);
+}
+
+.box{
   height: 100dvh;
   width: 100%;
   display: flex;
@@ -24,14 +26,15 @@
   justify-content: space-evenly;
 }
 
-.box__welcome__img{
-  height: 12.5rem;
-}
-
 .box__h1{
   color: black;
   font-size: 3rem;
   text-align: center;
+}
+
+.box__yellow__letter{
+  color: var(--secondary-color);
+
 }
 
 .box__h2{
@@ -49,6 +52,7 @@
   width: 10.5rem;
   background-color: var(--secondary-color);
   color: black;
+  border: 0.3rem solid black;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -72,25 +76,7 @@
   align-items: center;
   height: 35rem;
   width: 45rem;
-}
-
-.box__loading__animation__container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.box__loading__text{
-  font-size: 3.5rem;
-}
-
-.box__loading__fprint{
-  height: 1.5rem;
-  margin-top: 1.8rem;
-}
-
-.box__loading__fprint--oletter{
-  height: 2rem;
+  position: relative;
 }
 
 .box__cat__img{
@@ -99,3 +85,45 @@
   height: 100%;
   border-radius: 1.5rem;
 }
+
+.pc__cat{
+  position: absolute;
+  top: -10rem;
+  right: -5rem;
+  height: 15rem;
+}
+
+.skate__cat{
+  position: absolute;
+  bottom: 0;
+  left: -13.60rem;
+  height: 15rem;
+}
+
+.footer{
+  display: flex;
+  justify-content:center;
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+}
+
+.footer__credits{
+  font-size: 1rem;
+  text-align: center;
+  border: 0.3rem solid black;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  background-color: var(--secondary-color);
+}
+
+.footer__a{
+  color: black;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in;
+}
+
+.footer__a:hover{
+  color: var(--primary-color);
+}
+

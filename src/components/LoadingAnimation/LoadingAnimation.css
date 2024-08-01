@@ -1,0 +1,19 @@
+.box__loading__animation__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box__loading__text{
+    font-size: 3.5rem;
+  }
+  
+  .box__loading__fprint{
+    height: 1.2rem;
+    margin-top: 1.8rem;
+  }
+  
+  .box__loading__fprint--oletter{
+    height: 3rem;
+    margin-bottom: -0.25rem;
+  }
