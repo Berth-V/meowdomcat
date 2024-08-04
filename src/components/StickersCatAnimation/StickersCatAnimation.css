@@ -1,0 +1,77 @@
+.pc__cat{
+    position: absolute;
+    top: -10rem;
+    right: -5rem;
+    height: 15rem;
+  }
+  
+  .skate__cat{
+    position: absolute;
+    bottom: 0;
+    left: -13.6rem;
+    height: 15rem;
+  }
+
+  @media screen and (max-width: 1450px) {
+    .pc__cat{
+      height: 12rem;
+      top: -7rem;
+    }
+
+    .skate__cat{
+      height: 12rem;
+      left: -10.9rem;
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    .pc__cat{
+      height: 9rem;
+      top: -6rem;
+      right: -3.5rem;
+    }
+
+    .skate__cat{
+      height: 9rem;
+      left: -8.2rem;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    .pc__cat{
+      height: 5rem;
+      top: -3rem;
+      right: -2.5rem;
+    }
+
+    .skate__cat{
+      height: 5rem;
+      left: -4.5rem;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .pc__cat{
+      height: 7rem;
+      top: -4.5rem;
+      right: 0;
+    }
+
+    .skate__cat{
+      left: unset;
+      right: -7rem;
+      bottom: -5rem;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .pc__cat{
+      height: 5rem;
+      top: -3rem;
+      right: -1rem;
+    }
+
+    .skate__cat{
+      bottom: -4rem;
+    }
+  }

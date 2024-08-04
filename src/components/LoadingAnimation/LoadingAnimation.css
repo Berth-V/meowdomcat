@@ -5,7 +5,7 @@
   }
   
   .box__loading__text{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
   
   .box__loading__fprint{
@@ -14,6 +14,10 @@
   }
   
   .box__loading__fprint--oletter{
-    height: 3rem;
+    height: 2rem;
     margin-bottom: -0.25rem;
+  }
+
+  @media screen and (max-width: 360px) {
+
   }

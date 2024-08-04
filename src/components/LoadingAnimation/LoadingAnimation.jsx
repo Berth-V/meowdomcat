@@ -3,7 +3,7 @@ import FootPrint from "../../assets/huella.png";
 import "./LoadingAnimation.css";
 
 export default function LoadingAnimation() {
-  //This is a function to replace "o" letter for a FootPrint IMG tag
+  //This is a function to replace "o" letter in the FootPrint IMG tag
   const o = () => {
     return <img className="box__loading__fprint--oletter" src={FootPrint} />;
   };
@@ -30,23 +30,25 @@ export default function LoadingAnimation() {
     >
       {/* o() is a function to resume <img> tag in the loading animation*/}
       <h2 className="box__loading__text">L{o()}ading</h2>
-      {/* <a href="https://www.flaticon.es/iconos-gratis/pata" title="pata iconos">Pata iconos creados por logisstudio - Flaticon</a> */}
       <motion.img
         className="box__loading__fprint"
         src={FootPrint}
         alt="Loading FootPrint"
+        //Framer Motion Attributes
         variants={itemsAnimationVariants}
       />
       <motion.img
         className="box__loading__fprint"
         src={FootPrint}
         alt="Loading FootPrint"
+        //Framer Motion Attributes
         variants={itemsAnimationVariants}
       />
       <motion.img
         className="box__loading__fprint"
         src={FootPrint}
         alt="Loading FootPrint"
+        //Framer Motion Attributes
         variants={itemsAnimationVariants}
       />
     </motion.div>

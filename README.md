@@ -1,8 +1,35 @@
-# React + Vite
+# Berth-V Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is Meowdom Cat, if you want to view some fuunny Cats, just Press The Button and Have Fun!
+This Project is a Fetch Request Practice.
+This project was created with [Vite](https://github.com/vitejs/vite).
 
-Currently, two official plugins are available:
+### :globe_with_meridians: Direct WebSite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**WebSite Here**
+
+### :space_invader: SetUp
+
+Start Project
+
+`npm run dev`
+
+### :computer: Build and run for production
+
+Generate a full production build
+
+`npm run build`
+
+Builds the app for production to the `dist` folder
+
+### :wrench: This WebSite was built with
+
+- HTML5
+- CSS5
+- ECS6
+- [React](https://react.dev/) - JS Library
+- [Framer Motion](https://www.framer.com/motion/?utm_source=google&utm_medium=adwords&utm_campaign=TW-WW-All-GS-UA-Traffic-20190326-Brand.Bmm_) - Production-ready motion library for React
+
+### :wave: Social
+
+- Ig - [@bert.v1](https://www.instagram.com/bert.v1/)

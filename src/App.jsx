@@ -1,11 +1,10 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 import { PiCatLight } from "react-icons/pi";
-import { motion } from "framer-motion";
+import ImgTiitle from "./assets/meowdomtittle.png";
 import LoadingAnimation from "./components/LoadingAnimation/LoadingAnimation";
-import ImgTiitle from "./assets/miawdomtittle.png";
-import CatPc from "./assets/pccat.png";
-import SkateCat from "./assets/skate_cat.png";
+import StickersCatAnimation from "./components/StickersCatAnimation/StickersCatAnimation";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,7 +23,7 @@ function App() {
             const loadingFalseSetter = () => {
               setIsLoading(false);
             };
-            setTimeout(loadingFalseSetter, 1500);
+            setTimeout(loadingFalseSetter, 1000);
           },
           [isLoading]
         );
@@ -33,70 +32,34 @@ function App() {
   return (
     <>
       <div className="box">
-        <img src={ImgTiitle} alt="Miawdom Cat Tittle" />
-        <h2 className="box__h2">Press Button to Get Another Cat</h2>
-        <button
-          className="box__random__btn"
-          type="submit"
-          onClick={loadingTrueSetter}
-        >
-          <PiCatLight className="box__random__btn__icon" />
-          Miawdom Cat
-        </button>
-        <div className="box__cat__img__container">
-          {isLoading ? (
-            <LoadingAnimation />
-          ) : (
-            <img className="box__cat__img" src={catSrc} />
-          )}
-          {/* Stickers Animados */}
-          {/* <a href="https://www.flaticon.com/free-stickers/computer" title="computer stickers">Computer stickers created by Stickers - Flaticon</a> */}
-          <motion.img
-            className="pc__cat"
-            src={CatPc}
-            alt="Cat PC Animation"
-            initial={{ y: -1000, rotate: 30 }}
-            animate={{ y: 0, transition: { delay: 1.8 } }}
+        <div className="box__content">
+          <img
+            src={ImgTiitle}
+            className="box__tittle__img"
+            alt="Meowdom Cat Tittle"
           />
-          {/* <a href="https://www.flaticon.com/free-stickers/cat" title="cat stickers">Cat stickers created by DinosoftLabs - Flaticon</a> */}
-          <motion.img
-            src={SkateCat}
-            alt="Skate Cat"
-            className="skate__cat"
-            initial={{ x: -1000 }}
-            animate={{ x: 0, transition: { duration: 1.8 } }}
-          />
+          <h2 className="box__h2">Press Button to Get Another Cat</h2>
+          <button
+            className="box__random__btn"
+            type="submit"
+            onClick={loadingTrueSetter}
+          >
+            <PiCatLight className="box__random__btn__icon" />
+            Meowdom Cat
+          </button>
+          <div className="box__cat__img__container">
+            {isLoading ? (
+              //Loading Animation Component
+              <LoadingAnimation />
+            ) : (
+              <img className="box__cat__img" src={catSrc} />
+            )}
+            {/* Cats Stickers Animations */}
+            <StickersCatAnimation />
+          </div>
         </div>
       </div>
-      <footer className="footer">
-        <div className="footer__credits">
-          Credits to:
-          <br />
-          <a
-            className="footer__a"
-            href="https://www.flaticon.com/free-stickers/computer"
-            title="computer stickers"
-          >
-            Computer stickers created by Stickers - Flaticon
-          </a>
-          <br />
-          <a
-            className="footer__a"
-            href="https://www.flaticon.com/free-stickers/cat"
-            title="cat stickers"
-          >
-            Cat stickers created by DinosoftLabs - Flaticon
-          </a>
-          <br />
-          <a
-            className="footer__a"
-            href="https://www.flaticon.com/free-icons/paw"
-            title="paw icons"
-          >
-            Paw icons created by Vector Stall - Flaticon
-          </a>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

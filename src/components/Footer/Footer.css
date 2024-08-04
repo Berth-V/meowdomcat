@@ -1,0 +1,33 @@
+.footer{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+  }
+  
+  .footer__credits{
+    font-size: 1rem;
+    text-align: center;
+    border: 0.3rem solid black;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+  }
+  
+  .footer__a{
+    color: black;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+  }
+  
+  .footer__a:hover{
+    color: var(--primary-color);
+  }
+  
+  @media screen and (max-width: 360px) {
+    .footer__credits{
+      font-size: 0.7rem;
+    }
+  }
+  
