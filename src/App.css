@@ -15,7 +15,6 @@
 
 html{
   background-color: var(--primary-color);
-  overflow-x: hidden;
 }
 
 .box{
@@ -24,6 +23,7 @@ html{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  overflow-x: hidden;
 }
 
 .box__content{
